@@ -4,7 +4,7 @@ from scipy.special import softmax
 import torch
 
 # 🔧 NewsData.io API Ayarları
-NEWSDATA_API_KEY = "pub_9a71357a29ca40c88e66b6058fd85d15"  # <-- BURAYA kendi API anahtarını yaz
+NEWSDATA_API_KEY = "NEWSDATA_API_KEY "  # <-- BURAYA kendi API anahtarını yaz
 NEWSDATA_ENDPOINT = "https://newsdata.io/api/1/news"
 
 # 🔧 Şirketler ve CEO'lar
