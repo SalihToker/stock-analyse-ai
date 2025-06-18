@@ -27,24 +27,24 @@ FinBERT tabanlı duygu analizi ile haberlerin finansal tonunu belirleme
 
 ---
 
-# Depoyu klonla ve dizine geç
+## Depoyu klonla ve dizine geç
 git clone https://github.com/SalihToker/stock-analyse-ai.git
 cd stock-analyse-ai
 
-# Sanal ortam oluştur ve aktif et
-# Windows için:
+## Sanal ortam oluştur ve aktif et
+## Windows için:
 python -m venv venv
 venv\Scripts\activate
 
-# macOS/Linux için:
-# python3 -m venv venv
-# source venv/bin/activate
+## macOS/Linux için:
+## python3 -m venv venv
+## source venv/bin/activate
 
-# Gerekli paketleri yükle
+## Gerekli paketleri yükle
 pip install -r requirements.txt
 
-# main.py içindeki NEWSDATA_API_KEY değişkenine kendi API anahtarını ekle
+## main.py içindeki NEWSDATA_API_KEY değişkenine kendi API anahtarını ekle
 
-# Programı çalıştır
+## Programı çalıştır
 python main.py
 
