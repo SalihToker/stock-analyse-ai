@@ -57,14 +57,14 @@ You can easily add or remove companies from the configuration.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/stock-analyse-ai.git
+   git clone https://github.com/SalihToker/stock-analyse-ai.git
    cd stock-analyse-ai
    ```
 2. Install required Python packages:
    ```
    pip install -r requirements.txt
    ```
-3. Set your NewsData.io API key in the script:
+3. Set your NewsData.io API key in the script.
 
 4. Run the Project:
    ```
