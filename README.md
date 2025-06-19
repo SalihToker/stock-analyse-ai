@@ -89,3 +89,4 @@ This project is intended for **educational and research purposes** only.
 Please review and respect the individual licenses of any third-party APIs and models used (e.g., NewsData.io, Hugging Face Transformers).
 
 ---
+[Stock_Analyse_Rapor_20250619_123200.docx](https://github.com/user-attachments/files/20816376/Stock_Analyse_Rapor_20250619_123200.docx)
