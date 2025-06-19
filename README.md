@@ -90,3 +90,4 @@ Please review and respect the individual licenses of any third-party APIs and mo
 
 ---
 ![Stock_Analyse_Rapor_20250619_123200-1](https://github.com/user-attachments/assets/03a9520d-73eb-4735-829e-9e1c96936ae5)
+![Stock_Analyse_Rapor_20250619_123200-2](https://github.com/user-attachments/assets/f14d6745-66b3-4052-ba5d-167f98d14a02)
