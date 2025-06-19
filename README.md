@@ -1,47 +1,91 @@
-# Stock Analyse AI
+# 📊 Stock Analyse AI – Financial News Sentiment Analyzer
 
-NewsData.io API'den çekilen finans haberlerini FinBERT ile duygu analizine tabi tutarak şirket bazlı genel bir piyasa duygu skoru hesaplamakta.
-
-## Özellikler
-
-Finans haberlerini otomatik olarak API üzerinden çekme
-
-Haber metinlerinde şirket isimleri ve CEO'larına göre filtreleme
-
-FinBERT tabanlı duygu analizi ile haberlerin finansal tonunu belirleme
-
-Şirket bazlı duygu skorlarını hesaplayarak piyasa duyarlılığını ölçme
-
-Çoklu sayfa (pagination) desteği ile daha fazla haber çekebilme
+**Stock Analyse AI** is an AI-powered Python tool that collects real-time financial news about major global companies and analyzes the potential market sentiment impact of those news articles using NLP models like **FinBERT** and **BART**. It summarizes, scores, and generates a report with the most positive and negative news for each company.
 
 ---
 
-## Kullanılan Teknolojiler ve Kütüphaneler
+## 🎯 Objective
 
-- **Python 3.8+**
-- `requests` — HTTP istekleri için
-- `transformers` — Huggingface Transformers ile FinBERT modeli için
-- `scipy` — Softmax fonksiyonu için
-- `torch` (PyTorch) — Modelin çalışması için
-- **NewsData.io API** — Finans haberleri çekmek için
+To help investors, analysts, and researchers **automatically assess** the potential impact of financial news on major companies using modern NLP techniques.
 
 ---
 
-## Kurulum
+## 🔍 What It Does
 
-### Depoyu klonla ve dizine geç
-git clone https://github.com/SalihToker/stock-analyse-ai.git
-cd stock-analyse-ai
+- 🔎 Collects recent business news from **NewsData.io API**
+- 🧠 Optionally summarizes articles using **BART** (`facebook/bart-large-cnn`)
+- 📈 Performs sentiment analysis with **FinBERT** (`yiyanghkust/finbert-tone`)
+- 📊 Calculates **weighted impact scores** based on:
+  - Company name in title (`×1.2`)
+  - CEO name in title (`×1.1`)
+  - Critical keywords like "regulation", "lawsuit", "earnings" (`×1.5`)
+- 📄 Generates a `.docx` report including:
+  - Total sentiment score per company
+  - Top 5 most positive & negative articles
 
-### Sanal ortam oluştur ve aktif et
-python -m venv venv
-venv\Scripts\activate
+---
 
-### Gerekli paketleri yükle
-pip install -r requirements.txt
+## 🧪 Technologies Used
 
-### main.py içindeki NEWSDATA_API_KEY değişkenine kendi API anahtarını ekle
+| Technology | Purpose |
+|------------|---------|
+| Python 3.x | Core programming |
+| [NewsData.io API](https://newsdata.io/) | News source |
+| Hugging Face Transformers | FinBERT & BART models |
+| FinBERT (`yiyanghkust/finbert-tone`) | Financial sentiment analysis |
+| BART (`facebook/bart-large-cnn`) | Summarization (optional) |
+| PyTorch | Model execution |
+| SciPy (softmax) | Probability normalization |
+| requests | API calls |
+| python-docx | Word report generation |
 
-### Programı çalıştır
-python main.py
+---
 
+## 🏢 Tracked Companies
+
+- Apple (Tim Cook)  
+- Tesla (Elon Musk)  
+- Google (Sundar Pichai)  
+- Amazon (Andy Jassy)  
+- Microsoft (Satya Nadella)
+
+You can easily add or remove companies from the configuration.
+
+---
+
+## 📦 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/stock-analyse-ai.git
+   cd stock-analyse-ai
+   ```
+2. Install required Python packages:
+   ```
+   pip install -r requirements.txt
+   ```
+3. Set your NewsData.io API key in the script:
+
+4. Run the Project:
+   ```
+   python stock_analyse_ai.py
+   ```
+
+---
+
+## 📄 Sample Report Output
+
+- **Total news articles analyzed**
+- **Final sentiment score per company**
+- **Top 5 Positive News**
+- **Top 5 Negative News**
+- Report saved as: `Stock_Analyse_Rapor_YYYYMMDD_HHMMSS.docx`
+
+---
+
+## 📃 License
+
+This project is intended for **educational and research purposes** only.  
+Please review and respect the individual licenses of any third-party APIs and models used (e.g., NewsData.io, Hugging Face Transformers).
+
+---
